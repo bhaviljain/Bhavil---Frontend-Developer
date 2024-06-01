@@ -15,7 +15,7 @@ const Carousels = () => {
       items: 3
     },
     tablet: {
-      breakpoint: { max: 800, min: 464 },
+      breakpoint: { max: 800, min: 389 },
       items: 2
     },
     mobile: {
@@ -38,20 +38,23 @@ const Carousels = () => {
         },[])
         
   return (
+    <>
+   
+
     <Carousel responsive={responsive}
-    className='shadow-lg'
+    className='shadow-lg onplusnord3:pl-36'
     >
    {ResData.map((items)=>(
-    <div className='mt-20 bg-white '>
+    <div className='mt-28 bg-white '>
    <img src={items.strMealThumb}
-   className='h-40 w-40 rounded-full'
+   className='h-40 w-40 rounded-full onplusnord3:h-28 onplusnord3:w-28'
    />
-   <h4 className='font-bold text-center'>{items.strMeal}</h4>
+   <h4 className='font-bold text-center onplusnord3:pr-64 pt-5'>{items.strMeal}</h4>
    </div>
    ))}
   
   </Carousel>
-   
+   </>
    
   )
 }

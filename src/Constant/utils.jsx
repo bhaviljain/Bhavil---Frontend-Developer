@@ -1,6 +1,6 @@
 export const MealsID = "https://www.themealdb.com/api/json/v1/1/lookup.php?i="
 
-export const Ratings = "⭐4.2"
+export const Ratings = "⭐"
 
 export const sort = "https://img.icons8.com/?size=100&id=f1fhADRkTrAU&format=png&color=000000"
 

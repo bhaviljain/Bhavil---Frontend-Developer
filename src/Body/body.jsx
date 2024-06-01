@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Carousels from '../ImageSlider/Carousels'
 import Header from '../HeaderSection/Header'
+import { Ratings } from '../Constant/utils'
 
 
 function Body() {
@@ -16,7 +17,7 @@ function Body() {
     {
       const data = await fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
       const res =  await data.json()
-      // console.log(res);
+      console.log(res);
       setResData(res.meals)
       setFilterSearchData(res.meals)
     }
@@ -50,6 +51,7 @@ function Body() {
    handleFilterSearch={handleFilterSearch}
    ResData={ResData}
    />
+     <div className='text-black text-xl absolute top-20  font-extrabold onplusnord3:ml-20'>What's on your mind?</div>
 <Carousels/>
   <div className={`flex flex-wrap justify-center items-center `}>
           
@@ -58,14 +60,16 @@ function Body() {
  return(
    <div className='mt-16 p-6'>  
     <div key={items.idCategory}
-   className={`${openModal ? "blur" : ""}`}
+   className={`${openModal ? "blur" : ""} bg-gray-100 p-3 h-52 rounded-xl transition ease-in-out hover:-translate-y-2.5 hover:scale-110 duration-300`}
    >
      <img alt='logo' src={items.strMealThumb}
-     className='h-[115px] w-[170px] rounded-2xl transition ease-in-out hover:-translate-y-2.5 hover:scale-110 duration-300' 
+     className='h-[115px] w-[170px] rounded-2xl onplusnord3:h-20 onplusnord3:w-20' 
      onClick={(e)=>showDetail(items.strMeal)}
     />
    <h4 className='font-bold'>{items.strMeal}</h4>
-  
+   <h4 className='font-mono'>{Ratings}<span>4.3</span></h4>
+  <div className='font-sans opacity-70'>{items.strCategory}</div>
+
    </div>
   
    </div>

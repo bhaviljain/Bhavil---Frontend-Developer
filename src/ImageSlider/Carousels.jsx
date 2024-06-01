@@ -42,14 +42,14 @@ const Carousels = () => {
    
 
     <Carousel responsive={responsive}
-    className='shadow-lg onplusnord3:pl-36'
+    className='shadow-lg onplusnord3:pl-36 iPhoneSE:pl-2'
     >
    {ResData.map((items)=>(
     <div className='mt-28 bg-white '>
    <img src={items.strMealThumb}
-   className='h-40 w-40 rounded-full onplusnord3:h-28 onplusnord3:w-28'
+   className='h-40 w-40  rounded-full onplusnord3:h-28 onplusnord3:w-28 iPhoneSE:h-28 iPhoneSE:w-28 SamsungS8:h-20 SamsungS8:w-20 SamsungS8:ml-36 zfold:h-20 zfold:w-20 zfold:ml-32'
    />
-   <h4 className='font-bold text-center onplusnord3:pr-64 pt-5'>{items.strMeal}</h4>
+   <h4 className='font-bold text-center onplusnord3:pr-12 pt-5 iPhoneSE:pr-30'>{items.strMeal}</h4>
    </div>
    ))}
   

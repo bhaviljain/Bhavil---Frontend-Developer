@@ -51,7 +51,7 @@ function Body() {
    handleFilterSearch={handleFilterSearch}
    ResData={ResData}
    />
-     <div className='text-black text-xl absolute top-20  font-extrabold onplusnord3:ml-20'>What's on your mind?</div>
+     <div className='text-black text-xl absolute top-[65px]  font-extrabold onplusnord3:ml-20 iPhoneSE:ml-20 SamsungS8:ml-20 zfold:ml-20 '>What's on your mind?</div>
 <Carousels/>
   <div className={`flex flex-wrap justify-center items-center `}>
           
@@ -63,7 +63,7 @@ function Body() {
    className={`${openModal ? "blur" : ""} bg-gray-100 p-3 h-52 rounded-xl transition ease-in-out hover:-translate-y-2.5 hover:scale-110 duration-300`}
    >
      <img alt='logo' src={items.strMealThumb}
-     className='h-[115px] w-[170px] rounded-2xl onplusnord3:h-20 onplusnord3:w-20' 
+     className='h-[115px] w-[170px] rounded-2xl onplusnord3:h-20 onplusnord3:w-20 iPhoneSE:w-20 iPhoneSE:h-20 SamsungS8:h-20 SamsungS8:w-20 zfold:h-20 zfold:w-20' 
      onClick={(e)=>showDetail(items.strMeal)}
     />
    <h4 className='font-bold'>{items.strMeal}</h4>

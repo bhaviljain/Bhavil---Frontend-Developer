@@ -17,7 +17,7 @@ const [meals, setMeals] = useState([])
     },[])
   return (
   <>    
-  <div className='text-[30px] font-bold ml-7 mt-6 '>
+  <div className='text-[30px] font-bold ml-7 mt-6 iPhoneSE:mt-28 SamsungS8:mt-12'>
     Top Restaurants Near You</div>
   <div className='flex justify-center items-center flex-wrap gap-[30px]'>
 {meals.map((item,index)=>{

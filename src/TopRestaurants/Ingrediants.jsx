@@ -31,7 +31,7 @@ const backBtn = () =>{
   
     <button onClick={backBtn}
     className='m-4 bg-[rgb(252,128,25)] p-2 rounded-full
-    '>🡸
+    '>⬅
     </button>
     <p className='font-bold ml-2'>Go back</p>
 

@@ -7,6 +7,12 @@ module.exports = {
     screens: {
       "onplusnord3":{'min':'389px' , 'max':'614.55px'},
 
+      "iPhoneSE":{'min':'375px' , 'max':'667px'},
+
+      "SamsungS8":{'min':'360px' , 'max':'740px'},
+
+      "zfold":{'min':'344px' , 'max':'882px'},
+
       'sm': {'min': '640px', 'max': '767px'},
       // => @media (min-width: 640px and max-width: 767px) { ... }
 

@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      "onplusnord3":{'min':'389px' , 'max':'614px'},
+      "onplusnord3":{'min':'389px' , 'max':'614.55px'},
 
       'sm': {'min': '640px', 'max': '767px'},
       // => @media (min-width: 640px and max-width: 767px) { ... }

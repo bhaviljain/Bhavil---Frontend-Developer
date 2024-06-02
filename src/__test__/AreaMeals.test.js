@@ -1,7 +1,7 @@
 import { render ,screen} from "@testing-library/react"
 import AreaMeals from "../FilterArea/AreaMeals"
 
-test('should load button', () => { 
+test('should load button' , () => { 
  
     render(<AreaMeals />)
 

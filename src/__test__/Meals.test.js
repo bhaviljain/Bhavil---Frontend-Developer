@@ -4,7 +4,7 @@ import Meals from "../TopRestaurants/Meals"
 test('should first with logo', () => { 
     render(<Meals />)
 
-    const topres = screen.getByText("Top Restaurants Near You")
+    const topres = screen.getByText ("Top Restaurants Near You")
     expect(topres).toBeInTheDocument()
  })
  

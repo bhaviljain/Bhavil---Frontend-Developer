@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Body from './body'
 import Meals from '../TopRestaurants/Meals'
 import AreaMeals from '../FilterArea/AreaMeals'
 
+
 const Home = () => {
+
   return (
     <div>
-      
-          <Body/>
+    <Body/>
           
     <AreaMeals />
     <Meals/>
+
     </div>
   )
 }

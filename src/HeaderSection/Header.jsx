@@ -1,11 +1,21 @@
 import React from 'react'
 import { logo } from '../Constant/utils'
 
-const Header = ({handleFilterSearch}) => {
+const Header = ({FilterSearchData,setResData}) => {
+
+  // search function working
+  const handleFilterSearch = (value) => {
+    const result = FilterSearchData.filter((item) => {
+      return item.strMeal.toLocaleLowerCase().includes(value)
+    })
+    setResData(result)
+  }
+
  
   return (
     
     <div className='flex justify-between shadow-lg z-10 w-full bg-white fixed'>
+      {/* Logo are constants so they are stored inside utils folders */}
       <img alt='logo' src={logo} className='h-16 onplusnord3:h-10 iPhoneSE:h-10 SamsungS8:h-10 zfold:h-10'
       />
   <form className='pr-[20%] '>

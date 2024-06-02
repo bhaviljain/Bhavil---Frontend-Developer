@@ -2,7 +2,9 @@ import React from 'react'
 import { Ratings } from '../Constant/utils';
 
 const CountryFoodData = ({items}) => {
-  console.log(items);
+  
+  //shows the data into the UI
+
   return (
     <div>
       

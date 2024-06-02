@@ -5,6 +5,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      
       "onplusnord3":{'min':'389px' , 'max':'614.55px'},
 
       "iPhoneSE":{'min':'375px' , 'max':'667px'},

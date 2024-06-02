@@ -1,4 +1,3 @@
-export const MealsID = "https://www.themealdb.com/api/json/v1/1/lookup.php?i="
 
 export const Ratings = "⭐"
 

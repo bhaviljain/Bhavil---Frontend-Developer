@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 const Restauranitems = ({id,poster}) => {
   return (
     <div>
+
+      {/* Link to the page user clicked thru ID */}
 <Link to={"/" + id}
 >
 <img alt='logo' src={poster}

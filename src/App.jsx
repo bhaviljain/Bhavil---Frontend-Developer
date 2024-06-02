@@ -31,12 +31,13 @@ const appRouter = createBrowserRouter([
 ])
 
   return (
-    
     <div>
-    <RouterProvider router={appRouter}>
-    
+          <RouterProvider router={appRouter}>
+      
     <Home />
+  
       </RouterProvider>
+
     
         </div>
     
